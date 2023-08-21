@@ -1,0 +1,18 @@
+@import url('./SidePanel/sidepanel.css');
+@import url('./WindowForecast/windowforecast.css');
+@import url('./UI/SwitchThemeBtn/switchthemebtn.css');
+@import url('./LoadingAnimation/loadinganimation.css');
+@import url('./UI/BtnFirstType/btnfirsttype.css');
+@import url('./UI/CloseBtn/closebtn.css');
+
+.layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 833px) {
+  .layout {
+    flex-direction: column;
+    align-items: center;
+  }
+}

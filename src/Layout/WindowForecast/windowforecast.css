@@ -1,0 +1,99 @@
+@import url('./WeatherList/weatherlist.css');
+@import url('./WeatherDetails/weatherdetails.css');
+@import url('./ForecastSwithBtn/forecastswithbtn.css');
+
+.window-forecast {
+  padding-top: 42px;
+  padding-bottom: 44px;
+  padding-left: 9.58%;
+  padding-right: 8.33%;
+  flex: 1 1 980px;
+  max-width: 980px;
+  min-height: 100vh;
+  background-color: var(--color-shade-light);
+}
+
+.window-forecast__container {
+  margin-bottom: 19px;
+}
+
+.window-forecast__heading-box {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.window-forecast__heading {
+  margin-right: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.window-forecast__heading:last-child {
+  margin-right: 0;
+}
+
+.window-forecast__switch-btn-box > button {
+  margin-right: 24px;
+}
+
+.window-forecast__on-week-btn {
+  margin-right: 24px;
+}
+
+@media (max-width: 1439px) {
+  .window-forecast {
+    padding: 61px 79px 83px 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .window-forecast__container {
+    position: relative;
+    margin-bottom: 25px;
+    padding-top: 49px;
+  }
+
+  .window-forecast__heading-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -50px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 833px) {
+  .window-forecast {
+    padding: 50px 30px 96px 30px;
+    height: auto;
+    overflow: visible;
+  }
+
+  .window-forecast__container {
+    margin-bottom: 30px;
+  }
+
+  .window-forecast__heading-box {
+    position: static;
+    flex-direction: column;
+    margin-bottom: 42px;
+  }
+
+  .window-forecast__heading:not(:last-child) {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  .window-forecast__container {
+    padding-top: 0;
+  }
+
+  .window-forecast__on-week-btn {
+    margin-right: 55px;
+  }
+}

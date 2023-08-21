@@ -1,0 +1,35 @@
+.close-btn {
+  position: relative;
+  padding: 0 0;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+}
+
+.close-btn__line-1,
+.close-btn__line-2 {
+  position: absolute;
+  top: -5px;
+  left: 11px;
+  width: 4px;
+  height: 36px;
+  background-color: var(--color-text-main);
+  transition: background-color var(--time-transition-5) ease-in-out;
+}
+
+.close-btn__line-1 {
+  transform: rotate(45deg);
+}
+
+.close-btn__line-2 {
+  transform: rotate(-45deg);
+}
+
+.close-btn:hover .close-btn__line-1,
+.close-btn:active .close-btn__line-1,
+.close-btn:focus .close-btn__line-1,
+.close-btn:hover .close-btn__line-2,
+.close-btn:active .close-btn__line-2,
+.close-btn:focus .close-btn__line-2 {
+  background-color: var(--color-orange);
+}

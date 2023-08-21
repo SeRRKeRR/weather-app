@@ -1,0 +1,40 @@
+.humiditystrip {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.humiditystrip__box-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.humiditystrip__box-2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+.humiditystrip__value {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.humiditystrip__strip-outside,
+.humiditystrip__strip-inside {
+  height: 11px;
+  border-radius: 10px;
+}
+
+.humiditystrip__strip-outside {
+  width: 100%;
+  background-color: var(--color-humidity-strip);
+}
+
+.humiditystrip__strip-inside {
+  background-color: var(--color-orange);
+}

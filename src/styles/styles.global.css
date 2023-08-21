@@ -1,0 +1,98 @@
+:root {
+  --font-family: 'Rubik';
+  --color-text-additional: #ACACAC;
+  --color-orange: #EC6E4D;
+  --time-transition-5: 0.5s;
+  --panel-light: #fff;
+}
+
+html[data-theme='light']:root {
+  --color-text-main: #48484A;
+  --color-light: #FFFFFF;
+  --color-shade-light: #F1F1F1;
+  --color-switcher-theme: var(--color-text-main);
+  --color-moon: #E6E6E6;
+  --color-text-muted: #D3D3D3;
+  --color-btn-last-req: var(--color-moon);
+  --color-humidity-strip: var(--color-text-muted);
+}
+
+html[data-theme='dark']:root {
+  --color-text-main: #E6E6E6;
+  --color-light: #212331;
+  --color-shade-light: #100E1C;
+  --color-switcher-theme: var(--color-orange);
+  --color-moon: var(--color-light);
+  --color-text-muted: #6D6D6D;
+  --color-btn-last-req: var(--color-shade-light);
+  --color-humidity-strip: var(--color-text-main);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family), sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21.33px;
+  background: var(--color-light);
+  color: var(--color-text-main);
+}
+
+div,
+article,
+button {
+  transition: background-color var(--time-transition-5) ease-in-out;
+}
+
+h1, h2, h3,
+span,
+strong,
+button {
+  transition: color var(--time-transition-5) ease-in-out;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  padding: 0 0;
+  font-family: var(--font-family), sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+.body {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.home {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+
+

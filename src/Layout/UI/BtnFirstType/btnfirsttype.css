@@ -1,0 +1,16 @@
+.btn-first-type {
+  z-index: 1;
+  padding: 13px 25px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--color-text-additional);
+  font-weight: 700;
+  color: var(--color-text-main);
+  transition: background-color var(--time-transition-5) ease-in-out;
+}
+
+.btn-first-type:hover,
+.btn-first-type:active,
+.btn-first-type:focus {
+  background-color: var(--color-shade-light);
+}

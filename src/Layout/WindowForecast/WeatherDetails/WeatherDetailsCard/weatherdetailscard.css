@@ -1,0 +1,55 @@
+@import url('./HumidityStrip/humiditystrip.css');
+@import url('./WindDirection/winddirection.css');
+
+.weather-details-card__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 25px 10px 25px;
+  height: 100%;
+  background-color: var(--color-light);
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px 0px #0000000D;
+}
+
+.weather-details-card__weather {
+  line-height: 21px;
+}
+
+.weather-details-card__weather {
+  margin-bottom: 21px;
+}
+
+.weather-details__item:nth-last-child(n+3) >
+.weather-details-card__container >
+.weather-details-card__weather {
+  margin-bottom: 11px;
+}
+
+.weather-details__item:nth-child(1) >
+.weather-details-card__container >
+.weather-details-card__indication-box {
+  margin-bottom: 3px;
+}
+
+.weather-details-card__indication {
+  margin-right: 12px;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 76px;
+}
+
+.weather-details-card__unit {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42.66px;
+}
+
+.weather-details__item:last-child >
+.weather-details-card__container >
+.weather-details-card__indication-box >
+.weather-details-card__unit {
+  font-size: 18px;
+}
+

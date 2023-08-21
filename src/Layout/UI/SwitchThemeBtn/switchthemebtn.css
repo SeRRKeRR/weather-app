@@ -1,0 +1,61 @@
+.switch-theme-btn {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  width: 64px;
+  height: 32px;
+  border: 2px solid var(--color-text-additional);
+  border-radius: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color var(--time-transition-5) ease-in-out;
+}
+
+.switch-theme-btn:hover,
+.switch-theme-btn:active,
+.switch-theme-btn:focus {
+  background-color: var(--color-shade-light);
+}
+
+.switch-theme-btn > input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-theme-btn__box-img {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-switcher-theme);
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.switch-theme-btn__box-img > svg > path {
+  fill: var(--color-moon);
+  transition: fill var(--time-transition-5) ease-in-out;
+}
+
+.switch-theme-btn:hover .switch-theme-btn__box-img > svg > path,
+.switch-theme-btn:active .switch-theme-btn__box-img > svg > path,
+.switch-theme-btn:focus .switch-theme-btn__box-img > svg > path {
+  fill: var(--color-shade-light);
+}
+
+/* .switcher-theme > input:checked + .switcher-theme__box-img {
+  background-color: #2196F3;
+}
+
+.switcher-theme > input:focus + .switcher-theme__box-img {
+  box-shadow: 0 0 1px #2196F3;
+} */
+
+.switch-theme-btn > input:checked + .switch-theme-btn__box-img {
+  transform: translateX(32px);
+}

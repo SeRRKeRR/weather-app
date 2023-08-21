@@ -1,0 +1,34 @@
+.forecast-switch-btn {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--color-text-additional);
+  background-color: transparent;
+}
+
+.forecast-switch-btn.active {
+  color: var(--color-text-main);
+}
+
+.forecast-switch-btn:hover::after,
+.forecast-switch-btn:active::after,
+.forecast-switch-btn:focus::after {
+  background-color: var(--color-text-additional);
+}
+
+.forecast-switch-btn::after {
+  position: absolute;
+  content: '';
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: transparent;
+  transition: background-color var(--time-transition-5) ease-in-out;
+}
+
+
+.forecast-switch-btn.active::after {
+  background-color: var(--color-text-main);
+}
